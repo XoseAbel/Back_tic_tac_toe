@@ -12,12 +12,15 @@
   "author": "José Abel López López",
   "license": "ISC",
   "devDependencies": {
+    "@babel/plugin-syntax-async-generators": "^7.8.4",
+    "@babel/plugin-transform-runtime": "^7.11.5",
     "dotenv": "^8.2.0",
     "@babel/core": "^7.11.4",
     "@babel/node": "^7.10.5",
     "@babel/preset-env": "^7.11.0"
   },
   "dependencies": {
+    "@babel/runtime": "^7.11.2",
     "express": "^4.17.1"
   }
 }
