@@ -1,0 +1,21 @@
+{
+  "name": "backend_lopezlopezjoseabel",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon --exec babel-node index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "José Abel López López",
+  "license": "ISC",
+  "devDependencies": {
+    "dotenv": "^8.2.0",
+    "@babel/core": "^7.11.4",
+    "@babel/node": "^7.10.5",
+    "@babel/preset-env": "^7.11.0"
+  },
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
