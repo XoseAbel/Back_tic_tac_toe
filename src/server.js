@@ -1,11 +1,15 @@
 import express from 'express';
 import initPlay from './index.js';
-import dotenv from 'dotenv';
 import cors from 'cors';
-dotenv.config();
 import 'core-js/stable';
 import 'regenerator-runtime/runtime';
-const PORT = process.env.PORT;
+
+// prepare env to production
+if (process.env.ENVIRONMENT === 'development') {
+  import dotenv from 'dotenv';
+  dotenv.config();
+}
+const PORT = process.env.PORT || 3000;
 
 const app = express();
 // Configuración de express
