@@ -6,7 +6,7 @@ import 'regenerator-runtime/runtime';
 
 // prepare env to production
 if (process.env.ENVIRONMENT === 'development') {
-  import dotenv from 'dotenv';
+  const dotenv = require('dotenv');
   dotenv.config();
 }
 const PORT = process.env.PORT || 3000;
